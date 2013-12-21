@@ -1,0 +1,30 @@
+Name: Hangman
+Summary: Hangman
+Version: 0.1
+Release: 1
+Group: Game/Puzzle
+URL: http://example.org/
+License: BSD
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |
+  Hangman is a simple word game in which you attempt to guess a given word by selecting letters.  For each letter you select, you will either be rewarded by showing its location in the word, or punished by getting piece towards being hung.  If you miss too many letters then the game will end.
+Configure: none
+Builder: qtc5
+PkgConfigBR:
+- sailfishapp >= 0.0.10
+- Qt5Core
+- Qt5Qml
+- Qt5Quick
+Requires:
+- sailfishsilica-qt5 >= 0.10.9
+Files:
+- /usr/share/icons/hicolor/86x86/apps
+- /usr/share/applications
+- /usr/share/Hangman
+- /usr/bin
+- '%{_datadir}/icons/hicolor/86x86/apps/%{name}.png'
+- '%{_datadir}/applications/%{name}.desktop'
+- '%{_datadir}/%{name}/qml'
+- '%{_bindir}'
+PkgBR: []
