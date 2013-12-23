@@ -6,7 +6,7 @@
 #         - desktop icon filename must be changed
 #         - desktop filename must be changed
 #         - icon definition filename in desktop file must be changed
-TARGET = Hangman
+TARGET = harbour-hangman
 
 CONFIG += sailfishapp
 
@@ -34,8 +34,8 @@ OTHER_FILES += qml/Hangman.qml \
     qml/hangman/Word.qml \
     qml/hangman/WordInputDialog.qml \
     rpm/Hangman.spec \
-    rpm/Hangman.yaml \
-    Hangman.desktop
+    rpm/harbour-hangman.yaml \
+    harbour-hangman.desktop
 
 RESOURCES += \
     src/resources.qrc
